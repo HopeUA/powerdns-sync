@@ -1,0 +1,14 @@
+{
+  "powerdns": {
+    "api-key": ""
+  },
+  "google": {
+    "clientId": "",
+    "clientSecret": "",
+    "tokens": {
+      "refresh_token": "",
+      "access_token": ""
+    },
+    "spreadsheet": ""
+  }
+}

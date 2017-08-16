@@ -1,0 +1,25 @@
+{
+  "name": "@hope/powerdns-sync",
+  "scripts": {
+    "start": "NODE_PATH=src DEBUG=app:* node -r babel-register bin/app.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "chalk": "^2.1.0",
+    "config": "^1.26.2",
+    "moment": "^2.18.1",
+    "winston": "^2.3.1"
+  },
+  "babel": {
+    "plugins": [
+      "transform-async-to-generator",
+      "transform-es2015-modules-commonjs"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^20.0.4"
+  }
+}
