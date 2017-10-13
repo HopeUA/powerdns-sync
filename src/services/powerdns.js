@@ -45,17 +45,6 @@ async function getRecords(zone) {
 
 async function updateRecord(data) {
     const { records, zoneId } = data;
-    const recs = records.map((rec, idx, arr) => arr.length - 1 > idx ? `
-        {
-            "content":  "${rec.value}",
-            "disabled": false
-        },
-    ` : `
-        {
-            "content":  "${rec.value}",
-            "disabled": false
-        }
-    `);
     return await fetch(`${Config.get('powerdns.zoneList')}/${zoneId}`, {
         method: 'PATCH',
         headers: { "X-Api-Key": Config.get('powerdns.api-key') },
